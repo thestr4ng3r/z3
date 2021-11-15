@@ -30,8 +30,8 @@ Notes:
 #include"z3_interp.h"
 #include"z3_fpa.h"
 
-#undef __in
-#undef __out
+#undef __z3_in
+#undef __z3_out
 #undef __inout
 #undef __in_z
 #undef __out_z
