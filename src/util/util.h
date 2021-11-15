@@ -273,12 +273,12 @@ bool has_duplicates(const IT & begin, const IT & end) {
     return false;
 }
 
-#ifndef __out
-#define __out
+#ifndef __z3_out 
+#define __z3_out 
 #endif
 
-#ifndef __in
-#define __in
+#ifndef __z3_in 
+#define __z3_in 
 #endif
 
 #ifndef __inout

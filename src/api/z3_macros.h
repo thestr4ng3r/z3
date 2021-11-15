@@ -1,13 +1,13 @@
-#ifndef __in
-#define __in
+#ifndef __z3_in 
+#define __z3_in 
 #endif
 
-#ifndef __out
-#define __out
+#ifndef __z3_out 
+#define __z3_out 
 #endif
 
 #ifndef __out_opt
-#define __out_opt __out
+#define __out_opt __z3_out 
 #endif
 
 #ifndef __ecount
@@ -15,19 +15,19 @@
 #endif 
 
 #ifndef __in_ecount
-#define __in_ecount(num_args) __in __ecount(num_args)
+#define __in_ecount(num_args) __z3_in __ecount(num_args)
 #endif 
 
 #ifndef __out_ecount
-#define __out_ecount(num_args) __out __ecount(num_args)
+#define __out_ecount(num_args) __z3_out __ecount(num_args)
 #endif 
 
 #ifndef __inout_ecount
-#define __inout_ecount(num_args) __in __out __ecount(num_args)
+#define __inout_ecount(num_args) __z3_in __z3_out __ecount(num_args)
 #endif 
 
 #ifndef __inout
-#define __inout __in __out
+#define __inout __z3_in __z3_out 
 #endif
 
 #ifndef Z3_bool_opt
